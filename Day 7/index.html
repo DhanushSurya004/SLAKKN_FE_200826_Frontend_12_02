@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Complete HTML Practice Page">
+<meta name="keywords" content="HTML, Lists, Tables, Forms, Semantic Tags">
+<meta name="author" content="Dhanush Surya">
+<title>Complete HTML Practice</title>
+</head>
+<body id="top">
+
+<header id="header">
+<h1>Complete HTML Practice Page</h1>
+<h2>Everything Learned in Class</h2>
+<h3>Student Profile & HTML Demonstration</h3>
+
+<p>Hello! My name is <strong>Dhanush Surya</strong>. I am learning <em>HTML</em> and <mark>Web Development</mark>.</p>
+
+<p>
+<b>Bold</b>
+<strong>Strong</strong>
+<i>Italic</i>
+<em>Emphasis</em>
+<u>Underline</u>
+<s>Strikethrough</s>
+<del>Deleted</del>
+<ins>Inserted</ins>
+<small>Small Text</small>
+<big>Big Text</big>
+H<sub>2</sub>O
+X<sup>2</sup>
+</p>
+
+<hr>
+
+<blockquote>HTML is used to structure the content of a webpage.</blockquote>
+
+<p><q>Practice makes progress.</q></p>
+
+<p><abbr title="HyperText Markup Language">HTML</abbr> stands for HyperText Markup Language.</p>
+
+<p>Keyboard Shortcut: <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
+
+<p>Program Output: <samp>Hello World!</samp></p>
+
+<p>Variable: <var>x</var> = 10</p>
+
+<pre>
+This is preformatted text.
+Spaces and line breaks
+are preserved.
+</pre>
+</header>
+
+<nav id="navigation">
+<a href="#profile" title="Go to Profile">Profile</a>
+<a href="#lists" title="Go to Lists">Lists</a>
+<a href="#table" title="Go to Table">Table</a>
+<a href="#media" title="Go to Media">Media</a>
+<a href="#form" title="Go to Form">Form</a>
+<a href="#interactive" title="Go to Interactive">Interactive</a>
+</nav>
+
+<main id="main">
+
+<section id="profile">
+<h2>Student Profile</h2>
+
+<article>
+<header>
+<h3>Dhanush Surya</h3>
+<p><span>Frontend / Full Stack Learner</span></p>
+</header>
+
+<figure>
+<img src="assets/images/banner/profile.jpg" alt="Student Profile Image" width="300" height="200" title="Student Profile" loading="lazy">
+<figcaption>Student Profile Image</figcaption>
+</figure>
+
+<p>I am learning <span title="HyperText Markup Language">HTML</span> and Web Development.</p>
+
+<div>
+<p>This is a <span>div and span example.</span></p>
+</div>
+
+<aside>
+<h4>Quick Information</h4>
+<ul>
+<li>Learning HTML</li>
+<li>Learning CSS</li>
+<li>Learning JavaScript</li>
+</ul>
+</aside>
+
+<footer>
+<small>Profile Section</small>
+</footer>
+</article>
+</section>
+
+<section id="lists">
+<h2>HTML Lists</h2>
+
+<h3>Unordered List</h3>
+<ul id="skills" class="skill-list">
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>Java</li>
+<li>Spring Boot</li>
+</ul>
+
+<h3>Ordered List</h3>
+<ol type="1" start="1">
+<li>Learn HTML</li>
+<li>Learn CSS</li>
+<li>Learn JavaScript</li>
+<li>Build Projects</li>
+</ol>
+
+<h3>Alphabetical List</h3>
+<ol type="a">
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ol>
+
+<h3>Roman List</h3>
+<ol type="I">
+<li>Frontend</li>
+<li>Backend</li>
+<li>Database</li>
+</ol>
+
+<h3>Description List</h3>
+<dl>
+<dt>HTML</dt>
+<dd>HyperText Markup Language</dd>
+<dt>CSS</dt>
+<dd>Cascading Style Sheets</dd>
+<dt>URL</dt>
+<dd>Uniform Resource Locator</dd>
+</dl>
+
+<h3>Nested List</h3>
+<ul>
+<li>Frontend
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+</li>
+<li>Backend
+<ul>
+<li>Java</li>
+<li>Spring Boot</li>
+</ul>
+</li>
+</ul>
+</section>
+
+<section id="table">
+<h2>Student Learning Table</h2>
+
+<table border="1" cellpadding="10" cellspacing="0" width="100%">
+<caption>Learning Progress</caption>
+<thead>
+<tr>
+<th scope="col">Subject</th>
+<th scope="col">Level</th>
+<th scope="col">Status</th>
+<th scope="col">Score</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>HTML</td>
+<td>Beginner</td>
+<td>Completed</td>
+<td>95%</td>
+</tr>
+<tr>
+<td>CSS</td>
+<td>Beginner</td>
+<td>Learning</td>
+<td>80%</td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td>Beginner</td>
+<td>Learning</td>
+<td>75%</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<th colspan="3">Average</th>
+<td>83.3%</td>
+</tr>
+</tfoot>
+</table>
+</section>
+
+<section id="media">
+<h2>Links and Images</h2>
+
+<h3>External Link</h3>
+<a href="https://www.w3.org/" target="_blank" rel="noopener noreferrer" title="Visit W3C">Visit W3C</a>
+
+<h3>Email Link</h3>
+<a href="mailto:student@example.com" title="Send Email">Send Email</a>
+
+<h3>Telephone Link</h3>
+<a href="tel:+910000000000">Call</a>
+
+<h3>Image</h3>
+<figure>
+<img src="assets/images/banner/banner.jpg" alt="Website Banner" width="600" height="250" loading="lazy">
+<figcaption>Website Banner</figcaption>
+</figure>
+
+<h3>Image Map</h3>
+<img src="assets/images/banner/banner.jpg" alt="Clickable Banner" width="600" height="250" usemap="#bannerMap">
+
+<map name="bannerMap">
+<area shape="rect" coords="0,0,300,250" href="#profile" alt="Profile" title="Profile">
+<area shape="rect" coords="301,0,600,250" href="#form" alt="Form" title="Form">
+</map>
+</section>
+
+
+<section id="form">
+<h2>Student Registration Form</h2>
+
+<form action="#" method="post" autocomplete="on" enctype="multipart/form-data">
+
+<fieldset>
+<legend>Personal Information</legend>
+
+<label for="name">Full Name:</label>
+<input type="text" id="name" name="name" placeholder="Enter your name" minlength="3" maxlength="50" required autofocus>
+<br><br>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+<br><br>
+
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" minlength="8" maxlength="20" placeholder="Enter password" required>
+<br><br>
+
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" name="phone" placeholder="+91 9876543210" pattern="[0-9+ -]{10,15}">
+<br><br>
+
+<label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob" min="1990-01-01" max="2026-12-31">
+<br><br>
+
+<label for="time">Preferred Time:</label>
+<input type="time" id="time" name="time">
+<br><br>
+
+<label for="datetime">Appointment:</label>
+<input type="datetime-local" id="datetime" name="datetime">
+<br><br>
+
+<label for="website">Website:</label>
+<input type="url" id="website" name="website" placeholder="https://example.com">
+</fieldset>
+
+<fieldset>
+<legend>Academic Information</legend>
+
+<label for="course">Course:</label>
+<select id="course" name="course" required>
+<option value="">-- Select Course --</option>
+
+<optgroup label="Frontend">
+<option value="html">HTML</option>
+<option value="css">CSS</option>
+<option value="javascript">JavaScript</option>
+</optgroup>
+
+<optgroup label="Backend">
+<option value="java">Java</option>
+<option value="spring">Spring Boot</option>
+</optgroup>
+</select>
+
+<br><br>
+
+<label for="skills">Select Skills:</label>
+<select id="skills" name="skills" multiple size="4">
+<option value="html">HTML</option>
+<option value="css">CSS</option>
+<option value="javascript">JavaScript</option>
+<option value="java">Java</option>
+</select>
+
+<br><br>
+
+<label for="browser">Preferred Browser:</label>
+<input list="browsers" id="browser" name="browser" placeholder="Choose browser">
+
+<datalist id="browsers">
+<option value="Chrome">
+<option value="Firefox">
+<option value="Edge">
+<option value="Safari">
+</datalist>
+
+<br><br>
+
+<p>Gender:</p>
+
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label>
+
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Other</label>
+
+<p>Skills Known:</p>
+
+<input type="checkbox" id="html-skill" name="skills_known" value="html" checked>
+<label for="html-skill">HTML</label>
+
+<input type="checkbox" id="css-skill" name="skills_known" value="css">
+<label for="css-skill">CSS</label>
+
+<input type="checkbox" id="js-skill" name="skills_known" value="javascript">
+<label for="js-skill">JavaScript</label>
+
+<br><br>
+
+<label for="experience">Experience:</label>
+<input type="number" id="experience" name="experience" min="0" max="20" step="1" value="0">
+
+<br><br>
+
+<label for="confidence">HTML Confidence:</label>
+<input type="range" id="confidence" name="confidence" min="0" max="100" step="5" value="50">
+
+<br><br>
+
+<label for="color">Favorite Color:</label>
+<input type="color" id="color" name="color" value="#000000">
+</fieldset>
+
+<fieldset>
+<legend>Additional Details</legend>
+
+<label for="photo">Profile Photo:</label>
+<input type="file" id="photo" name="photo" accept="image/*">
+
+<br><br>
+
+<label for="search">Search:</label>
+<input type="search" id="search" name="search" placeholder="Search HTML">
+
+<br><br>
+
+<label for="message">About You:</label>
+<br>
+
+<textarea id="message" name="message" rows="6" cols="50" minlength="10" maxlength="500" placeholder="Write about yourself..." required></textarea>
+
+<br><br>
+
+<input type="hidden" name="form_version" value="1.0">
+
+<input type="checkbox" id="terms" name="terms" value="accepted" required>
+<label for="terms">I agree to the terms and conditions.</label>
+</fieldset>
+
+<button type="submit" name="submit" value="submit">Submit</button>
+<button type="reset" name="reset" value="reset">Reset</button>
+<button type="button" name="normal_button" value="button">Normal Button</button>
+
+</form>
+</section>
+
+<section id="interactive">
+<h2>Interactive HTML Elements</h2>
+
+<details open>
+<summary>Click to view HTML information</summary>
+<p>HTML is used to structure web pages.</p>
+</details>
+
+<br>
+
+<dialog id="myDialog">
+<p>This is an HTML dialog box.</p>
+<button type="button" onclick="document.getElementById('myDialog').close()">Close</button>
+</dialog>
+
+<button type="button" onclick="document.getElementById('myDialog').showModal()">Open Dialog</button>
+
+<h3>Progress</h3>
+<progress value="75" max="100">75%</progress>
+
+<h3>Meter</h3>
+<meter min="0" max="100" low="30" high="80" optimum="100" value="85">85%</meter>
+</section>
+
+<section id="other-elements">
+<h2>Other HTML Elements</h2>
+
+<p>Current date: <time datetime="2026-08-30">30 August 2026</time></p>
+
+<p dir="rtl">This text is written from right to left.</p>
+
+<p lang="fr">Bonjour</p>
+
+<div contenteditable="true" spellcheck="true">This text is editable. Try changing it.</div>
+
+<br>
+
+<p draggable="true">This text can be dragged.</p>
+
+<p>Example: <code>&lt;h1&gt;Hello&lt;/h1&gt;</code></p>
+
+<ruby>
+HTML
+<rt>Web Structure</rt>
+</ruby>
+</section>
+
+<section id="attributes">
+<h2>Global Attributes</h2>
+
+<p id="global-example" class="example" title="Global attribute example" lang="en" dir="ltr" tabindex="0" data-topic="html">
+This paragraph demonstrates global attributes.
+</p>
+
+<p title="Tooltip Example">Move your mouse over this text.</p>
+
+<p contenteditable="true">This paragraph is editable.</p>
+</section>
+
+</main>
+
+<footer id="footer">
+
+<hr>
+
+<p>&copy; 2026 Dhanush Surya</p>
+
+<p>
+<a href="#top" title="Go back to top">Back to Top</a>
+</p>
+
+<address>
+Email:
+<a href="mailto:student@example.com">student@example.com</a>
+</address>
+
+</footer>
+
+</body>
+</html>
