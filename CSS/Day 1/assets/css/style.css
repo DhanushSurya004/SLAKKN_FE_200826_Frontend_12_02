@@ -1,0 +1,25 @@
+.title {
+    color: white;
+    background-color: darkblue;
+}
+
+.section-title {
+    color: white;
+    background-color: darkgreen;
+}
+
+.student {
+    color: darkblue;
+}
+
+.topic {
+    color: darkgreen;
+}
+
+.status {
+    color: darkred;
+}
+
+.item {
+    color: black;
+}
