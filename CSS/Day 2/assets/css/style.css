@@ -1,0 +1,39 @@
+
+* {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 10px 0;
+  color: #333;
+}
+
+.info {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+#student-name {
+  color: #e74c3c;
+  font-size: 18px;
+}
+
+h1, h2 {
+  color: #ffffff;
+  background-color: #364b61;
+  padding: 10px 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+body {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f4f6f7;
+}
