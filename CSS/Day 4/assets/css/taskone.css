@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h1 {
+    margin: 30px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.box {
+    background-color: lightblue;
+    border: 2px solid blue;
+    padding: 30px;
+    width: 150px;
+}
