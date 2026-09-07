@@ -21,7 +21,7 @@ h1 {
     margin: 30px 0;
 }
 
-.container {
+.parent {
     display: flex;
 
     height: 400px;
