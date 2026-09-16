@@ -1,0 +1,210 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  text-align: center;
+  padding: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin: 30px 0;
+}
+
+/* ---------- Team Section ---------- */
+
+.team-heading {
+  text-align: center;
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.team-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.team-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+}
+
+.employee-name {
+  font-size: 18px;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.job-role {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.employee-email {
+  font-size: 13px;
+  color: #4a4a4a;
+  margin-bottom: 15px;
+  word-break: break-word;
+}
+
+.profile-btn {
+  background-color: #2d6cdf;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.profile-btn:hover {
+  background-color: #1a4fb0;
+}
+
+@media (max-width: 1024px) {
+  .team-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .team-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  body {
+    padding: 15px;
+  }
+
+  .team-heading {
+    font-size: 24px;
+  }
+}
+
+/* ---------- Products Section ---------- */
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid lightgray;
+  transition: 0.3s;
+}
+
+.product-card h2 {
+  font-size: 20px;
+}
+
+.product-card p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-card button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  background-color: lightblue;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px gray;
+}
+
+.product-card:hover button {
+  background-color: green;
+}
+
+/* ---------- Boxes Section 1 ---------- */
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(44, 62, 80);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 8px;
+}
+
+.box h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* ---------- Boxes Section 2 ---------- */
+
+.parent-alt {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  border: 2px solid black;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.box-alt {
+  background-color: lightblue;
+  border: 2px solid blue;
+  padding: 30px;
+  width: 150px;
+}
