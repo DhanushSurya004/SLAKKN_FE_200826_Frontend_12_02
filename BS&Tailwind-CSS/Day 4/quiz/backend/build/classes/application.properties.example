@@ -1,0 +1,5 @@
+# Copy these values into environment variables or adapt application.properties for local use.
+DB_URL=jdbc:mysql://localhost:3306/quizmaster?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+DB_USERNAME=root
+DB_PASSWORD=YOUR_PASSWORD
+SERVER_PORT=8080

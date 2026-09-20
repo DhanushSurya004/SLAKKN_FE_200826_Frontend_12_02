@@ -1,0 +1,3 @@
+import { Routes, Route, NavLink } from 'react-router-dom';
+import Home from './pages/Home'; import Topics from './pages/Topics'; import Quiz from './pages/Quiz'; import Result from './pages/Result'; import Leaderboard from './pages/Leaderboard';
+export function App() { return <><header><NavLink className="brand" to="/">QuizMaster<span>.</span></NavLink><nav><NavLink to="/topics">Play</NavLink><NavLink to="/leaderboard">Leaderboard</NavLink></nav></header><main><Routes><Route path="/" element={<Home />}/><Route path="/topics" element={<Topics />}/><Route path="/quiz/:topicId" element={<Quiz />}/><Route path="/result" element={<Result />}/><Route path="/leaderboard" element={<Leaderboard />}/><Route path="*" element={<Home />}/></Routes></main></> }
