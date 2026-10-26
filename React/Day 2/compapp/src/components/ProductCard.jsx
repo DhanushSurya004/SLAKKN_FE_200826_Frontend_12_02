@@ -1,10 +1,14 @@
-const ProductCard = ({ name, price, category, available }) => (
-  <article className="product-card">
-    <h3>{name}</h3>
-    <p>Price: {price}</p>
-    <p>Category: {category}</p>
-    <p>Availability: {available ? 'In stock' : 'Out of stock'}</p>
-  </article>
-)
+const ProductCard = (props) => {
+  return (
+    <>
+      <div className="product-card">
+        <p>Name: {props.name}</p>
+        <p>Price: {props.price}</p>
+        <p>Category: {props.category}</p>
+        <p>Availability: {props.available ? 'In stock' : 'Out of stock'}</p>
+      </div>
+    </>
+  )
+}
 
 export default ProductCard

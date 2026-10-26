@@ -1,7 +1,11 @@
-const Header = ()=>{
-
-    return(<>
-        <header><h2>My Website</h2></header>
-    </>)
+const Header = () => {
+  return (
+    <>
+      <div>
+        <h2>My Website</h2>
+      </div>
+    </>
+  )
 }
+
 export default Header
