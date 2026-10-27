@@ -23,23 +23,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
-      - name: Set up Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version: 22
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-      - name: Build Vite React app
-        working-directory: React/Day 1/myapp
-        run: |
-          npm ci
-          sed -i 's|href="/icons.svg#|href="./icons.svg#|g' src/App.jsx
-          npm run build -- --base=./
-      - name: Build Create React App
-        working-directory: React/Day 1/myapptwo
-        run: |
-          npm ci --legacy-peer-deps
-          PUBLIC_URL=. npm run build
       - name: Prepare Pages artifact
         run: |
           mkdir -p _site
@@ -47,9 +32,6 @@ jobs:
           mkdir -p "_site/React/Day 1"
           cp React/index.html "_site/React/"
           cp "React/Day 1/index.html" "React/Day 1/node-npm-versions.png" "_site/React/Day 1/"
-          mkdir -p "_site/React/Day 1/myapp" "_site/React/Day 1/myapptwo"
-          cp -R "React/Day 1/myapp/dist/." "_site/React/Day 1/myapp/"
-          cp -R "React/Day 1/myapptwo/build/." "_site/React/Day 1/myapptwo/"
       - name: Upload site files
         uses: actions/upload-pages-artifact@v4
         with:
