@@ -28,7 +28,7 @@ jobs:
       - name: Prepare Pages artifact
         run: |
           mkdir -p _site
-          cp -R index.html portfolio.css assets HTML CSS "BS&Tailwind-CSS" JS ilovepdf _site/
+          cp -R index.html portfolio.css assets HTML CSS "BS&Tailwind-CSS" JS ilovepdf SQL _site/
           mkdir -p "_site/React/Day 1"
           cp React/index.html "_site/React/"
           cp "React/Day 1/index.html" "React/Day 1/node-npm-versions.png" "_site/React/Day 1/"
